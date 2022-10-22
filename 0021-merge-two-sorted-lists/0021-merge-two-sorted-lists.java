@@ -34,17 +34,18 @@ class Solution {
             mergedList = mergedList.next;
         }
         
-        while(list1 != null){
-            mergedList.next = new ListNode(list1.val);
-            list1 = list1.next;
-            mergedList = mergedList.next;
-        }
-        
-        while(list2 != null){
-            mergedList.next = new ListNode(list2.val);
-            list2 = list2.next;
-            mergedList = mergedList.next;
-        }
+        if(list1 != null ) mergedList.next = list1;
+        // while(list1 != null){
+        //     mergedList.next = new ListNode(list1.val);
+        //     list1 = list1.next;
+        //     mergedList = mergedList.next;
+        // }
+        if(list2 != null ) mergedList.next = list2;
+        // while(list2 != null){
+        //     mergedList.next = new ListNode(list2.val);
+        //     list2 = list2.next;
+        //     mergedList = mergedList.next;
+        // }
         
         return headMerged;
     }
