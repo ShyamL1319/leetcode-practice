@@ -20,7 +20,6 @@ class Solution {
         int rightHeight = maxDepth(root.right);
         if(Math.abs(leftHeight - rightHeight)>1) return false;
         return (isBalanced(root.left) && isBalanced(root.right));
-        
     }
     
     public int maxDepth(TreeNode root){
