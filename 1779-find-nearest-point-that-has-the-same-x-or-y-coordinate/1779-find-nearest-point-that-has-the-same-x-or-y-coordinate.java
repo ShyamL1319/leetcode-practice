@@ -4,9 +4,12 @@ class Solution {
         int leftMostIndex = -1;
         int minMHD = Integer.MAX_VALUE;
         for (int i = 0; i < points.length; i++) {
-            if (x == points[i][0] || y == points[i][1]) {
-                if (minMHD > (Math.abs(x - points[i][0]) + Math.abs(y - points[i][1]))) {
-                    minMHD = Math.abs(x - points[i][0]) + Math.abs(y - points[i][1]);
+            int x1 = points[i][0];
+            int y1 = points[i][1];
+            if (x == x1 || y == y1 ) {
+                int currDist = Math.abs(x - x1) + Math.abs(y - y1);
+                if (minMHD > currDist) {
+                    minMHD = currDist;
                     leftMostIndex = i;
                 }
             }
