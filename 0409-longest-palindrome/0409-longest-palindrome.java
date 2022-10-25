@@ -1,6 +1,7 @@
 class Solution {
 
     public int longestPalindrome(String s) {
+        // HashMap Approach
 //         HashMap<Character, Integer> store = new HashMap<>();
 //         if (s.length() == 1) return 1;
 //         for (int i = 0; i < s.length(); i++) {
@@ -28,6 +29,7 @@ class Solution {
 //         } else {
 //             return (lenOfMaxPalindrome + oddEvenCount + 1);
 //         }
+        // Set Approach
         Set<Character> set = new HashSet<>();
         int len = 0;
 
