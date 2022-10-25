@@ -4,7 +4,8 @@ class Solution {
         HashMap<Character, Integer> store = new HashMap<>();
         if (s.length() == 1) return 1;
         for (int i = 0; i < s.length(); i++) {
-            store.put(s.charAt(i), store.getOrDefault(s.charAt(i), 0) + 1);
+            char c = s.charAt(i);
+            store.put(c, store.getOrDefault(c, 0) + 1);
         }
 
         int lenOfMaxPalindrome = 0;
@@ -25,7 +26,6 @@ class Solution {
         if (flag == 0) {
             return lenOfMaxPalindrome;
         } else {
-            // if (lenOfMaxPalindrome + oddEvenCount == 0) return 2;
             return (lenOfMaxPalindrome + oddEvenCount + 1);
         }
     }
