@@ -1,4 +1,6 @@
-​What question is saying we have Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
+<img align="center" src="https://github.com/ShyamL1319/leetcode-practice/blob/main/0142-linked-list-cycle-ii/start-point-of-cycle-in-linkedlist.png"/>
+
+What question is saying we have Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
 Inorder to solve this question we will gonna use Floyd Cycle Algorithm which states that :
 
 Traverse linked list using two pointers.
