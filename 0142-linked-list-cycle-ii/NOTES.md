@@ -35,5 +35,5 @@ Q: Now your question Why l1 + l2 + l3 + l2 = 2 (l1 + l2)?
 Ans: Its just the relationship between the distance travelled by fast pointer and the distance travelled by the slow pointer.
 As fast pointer, runs twice the speed of slow pointer. Therefore, when they meet, distance travelled by fast pointer will be 2*(distance travelled by slow pointer).
 
-Therefore, x1 = x3.
+Therefore, l1 = l3.
 
