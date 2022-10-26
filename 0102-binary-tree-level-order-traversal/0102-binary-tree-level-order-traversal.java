@@ -21,22 +21,18 @@ class Solution {
             queue.add(root);
         }
         List<Integer> levelEle = new ArrayList<>();
-        List<TreeNode> levelNode = new ArrayList<>();
         while(!queue.isEmpty()){
-            TreeNode tNode = queue.remove();
-            levelEle.add(tNode.val);
-            levelNode.add(tNode);
-            if(queue.isEmpty() && levelNode.size() > 0){
-                for(TreeNode t:levelNode){
-                    if(t.left!=null)
-                        queue.add(t.left);
-                    if(t.right!=null)
-                        queue.add(t.right);
-                }
-                ans.add(levelEle);
-                levelNode = new ArrayList<>();
-                levelEle =  new ArrayList<>();
+            int size = queue.size();
+            for(int i=0; i<size; i++){
+                TreeNode tNode = queue.remove();
+                levelEle.add(tNode.val);
+                if(tNode.left!=null)
+                    queue.add(tNode.left);
+                if(tNode.right!=null)
+                    queue.add(tNode.right);
             }
+            ans.add(levelEle);
+            levelEle =  new ArrayList<>();
         }
         return ans;
     }
