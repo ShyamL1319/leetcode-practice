@@ -6,9 +6,9 @@ class Solution {
         for(int row=0; row<mat.length; row++){
             if(row == size-row){
                 sum += mat[row][row];
-                System.out.println(mat[row][row]);
+                //System.out.println(mat[row][row]);
             }else{
-                System.out.println(mat[row][row]+"    "+mat[row][size-row]);
+                //System.out.println(mat[row][row]+"    "+mat[row][size-row]);
                 sum += (mat[row][row] + mat[row][size-row]);
             }
         }
