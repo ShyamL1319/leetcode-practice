@@ -29,8 +29,8 @@ class MedianFinder {
     public double findMedian() {
         int N = list.size();
         if (N % 2 == 0) {
-            return ((double) this.list.get(N / 2 - 1) + (double) this.list.get(N / 2)) / 2.0;
-        } else return (double) this.list.get(N / 2);
+            return (this.list.get(N / 2 - 1) + this.list.get(N / 2)) / 2.0;
+        } else return this.list.get(N / 2) * 1.0;
     }
 }
 /**
