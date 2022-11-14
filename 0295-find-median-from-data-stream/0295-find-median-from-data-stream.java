@@ -18,6 +18,9 @@ class MedianFinder {
     public double findMedian() {
         if (max.size() == min.size()) return (max.peek() + min.peek()) / 2.0; else return max.peek();
     }
+    
+    
+    
     //     Brute Force Approach
     //     ArrayList<Integer> list = null;
 
